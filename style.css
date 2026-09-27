@@ -1,5 +1,5 @@
 /* =========================================================
-   SHRISHAIL S ANAGAWADI - RESUME
+   SHRISHAIL S ANAGAWADI - PYTHON DEVELOPER RESUME
    Edit resume content in index.html.
    Edit colors/layout here in style.css.
    ========================================================= */
@@ -14,23 +14,27 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f2f4f7;
     color: #222;
-    line-height: 1.5;
+    line-height: 1.45;
 }
 
 .resume {
     width: min(900px, calc(100% - 32px));
     margin: 32px auto;
     background: #fff;
-    padding: 42px 48px;
+    padding: 38px 46px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Header */
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
 .header {
     display: flex;
     justify-content: space-between;
     gap: 30px;
-    padding-bottom: 22px;
+    padding-bottom: 20px;
     border-bottom: 2px solid #222;
 }
 
@@ -41,7 +45,7 @@ h1 {
 }
 
 .role {
-    margin-top: 7px;
+    margin-top: 6px;
     font-size: 15px;
     color: #555;
 }
@@ -65,9 +69,13 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Sections */
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
 section {
-    margin-top: 24px;
+    margin-top: 21px;
 }
 
 h2 {
@@ -75,36 +83,44 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 1.3px;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     border-bottom: 1px solid #bbb;
 }
 
 section > p {
-    font-size: 13.5px;
+    font-size: 13.2px;
     text-align: justify;
 }
 
-/* Skills */
+
+/* =========================================================
+   TECHNICAL SKILLS
+   ========================================================= */
+
 .skills {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
 }
 
 .skill-row {
     display: grid;
     grid-template-columns: 145px 1fr;
     gap: 10px;
-    font-size: 13px;
+    font-size: 12.8px;
 }
 
 .skill-row strong {
     color: #333;
 }
 
-/* Projects */
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
 .project {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .project:last-child {
@@ -120,7 +136,7 @@ section > p {
 
 .project-heading h3 {
     font-size: 14px;
-    line-height: 1.35;
+    line-height: 1.3;
 }
 
 .project-heading a {
@@ -137,21 +153,26 @@ section > p {
 }
 
 ul {
-    margin-top: 5px;
+    margin-top: 4px;
     padding-left: 18px;
 }
 
 li {
-    margin-bottom: 3px;
-    font-size: 13px;
+    margin-bottom: 2px;
+    font-size: 12.8px;
+    line-height: 1.4;
 }
 
-/* Education */
+
+/* =========================================================
+   EDUCATION
+   ========================================================= */
+
 .education-item {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
 }
 
 .education-item h3 {
@@ -172,11 +193,15 @@ li {
     text-align: right;
 }
 
-/* Print / Download */
+
+/* =========================================================
+   DOWNLOAD / PRINT BUTTON
+   ========================================================= */
+
 .actions {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .actions button {
@@ -193,8 +218,13 @@ li {
     opacity: 0.85;
 }
 
-/* Mobile */
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
 @media (max-width: 700px) {
+
     .resume {
         width: 100%;
         margin: 0;
@@ -232,11 +262,16 @@ li {
     }
 }
 
-/* Print */
+
+/* =========================================================
+   PRINT / PDF
+   ========================================================= */
+
 @media print {
+
     @page {
         size: A4;
-        margin: 12mm;
+        margin: 10mm;
     }
 
     body {
@@ -257,5 +292,17 @@ li {
     a {
         color: inherit;
         text-decoration: none;
+    }
+
+    section {
+        margin-top: 18px;
+    }
+
+    .project {
+        margin-bottom: 12px;
+    }
+
+    li {
+        margin-bottom: 1px;
     }
 }
